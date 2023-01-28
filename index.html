@@ -1,0 +1,264 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" class="gr__shape2prog_csail_mit_edu">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="http://shape2prog.csail.mit.edu/images/favicon.ico">
+    <meta name="description" content="Causally Debiased Time-aware Recommendation">
+    <meta name="keywords" content="Causally Debiased Time-aware Recommendation">
+
+    <title>CDTR</title>
+    <link rel="stylesheet" href="asset/font.css">
+    <link rel="stylesheet" href="asset/main.css">
+
+</head>
+
+<body data-gr-c-s-loaded="true">
+
+    <div class="outercontainer">
+        <div class="container">
+
+            <div class="content project_title">
+                <h1>Causally Debiased Time-aware Recommendation</h1>
+            </div>
+
+            <div class="content project_headline">
+                <center>
+                    <h2>
+                        <font size="3">Anonymous Author</font>&nbsp;&nbsp;
+
+            </div>
+
+
+
+
+
+            <div class="content">
+                <div class="text">
+                    <h1>1. Abstract</h1>
+                    <p>
+                        <font size=3>
+                            Time-aware recommendation has been widely studied for modeling the user dynamic preference.
+                            While, in the past few decades, a lot of promising models have been proposed, an important
+                            problem has been largely ignored, that is, the users may not evenly behave on the timeline,
+                            and the observed datasets can be biased on the interaction time, which may degrade the model
+                            performance.
+                            In this paper, we propose a causally debiased time-aware recommender framework to more
+                            accurately learn the user preference.
+                            In specific, we firstly formulate the task of time-aware recommendation by a causal graph,
+                            where we identify two types of biases on the item- and time-levels, respectively.
+                            Then we define the ideal unbiased learning objective.
+                            To optimizable this objective, we propose a debiased framework based on the inverse
+                            propensity score (IPS), and also extend it to the doubly robust method.
+                            For both of these methods, we theoretically analyze their unbiasedness.
+                            Considering that the user preference in the recommendation domain can be quite diverse and
+                            complex, which may result in the unmeasured confounders, we develop a sensitive analysis
+                            method to obtain more accurate IPS.
+                            We theoretically draw a connection between this method and the idea learning objective,
+                            which to the best of our knowledge, is the first time in the research community.
+                            We conduct extensive experiments based on {three} real-world datasets to demonstrate the
+                            effectiveness of our model.
+                        </font>
+                    </p>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="text">
+                    <h1>2. Contributions</h1>
+                    <div class="content project_headline">
+                        <div class="content">
+
+                            <p>
+                            <ul class="download">
+                                <font size=3>
+                                    <li>we propose to build a debiased time-aware recommender framework from the causal perspective.</li>
+                                    <br/>
+                                    <li>To achieve this goal, we design an IPS based model, and extend it by building a doubly robust method and explicitly modeling the unmeasured confounders.
+                                    </li>
+                                    <br/>
+                                    <li>We provide a series of theoretical analysis on the designed models.</li>
+                          
+
+                                </font>
+                            </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="text">
+                    <h1>3. Main Results</h1>
+                </div>
+
+                <div class="content project_headline">
+                    <div class="text">
+                        <p>
+                            <font size=3>Table 1: Overall comparison between CDTR and other methods on various datasets. </font>
+                        </p>
+                    </div>
+                    <div class="img" style="text-align:center">
+                        <img class="img_responsive" src="asset/overall.png" alt="result"
+                            style="margin:auto;max-width:90%">
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="content">
+                <div class="text">
+                    <h1>4. Code and Datasets</h1>
+
+                    <h2> 4.1 Code <a
+                            href="https://drive.google.com/drive/folders/1wPXw9aPIsrS_tzBimujF-uQRb_1n4ZRQ?usp=share_link">[link:Google
+                            Driver]</font></a></h2>
+
+                    <div class="content project_headline">
+                        <div class="text">
+                            <p>
+                                <font size=3>Table 2: Structure of the main program files.</font>
+                            </p>
+                        </div>
+                        <div class="img" style="text-align:center;width:100%;">
+                            <img class="img_responsive" src="asset/code1.png" alt="main program files"
+                                style="margin:auto;max-width:90%">
+                        </div>
+
+                        <div class="img" style="text-align:center;width:100%;">
+                            <div class="text">
+                                <p>
+                                    <font size=3>Table 3: Structure of the auxiliary files.</font>
+                                </p>
+                            </div>
+                            <img class="img_responsive" src="asset/code2.png" alt="auxiliary files"
+                                style="margin:auto;max-width:90%">
+                        </div>
+
+                    </div>
+                    <h2>4.2 Datasets <a
+                            href="https://drive.google.com/drive/folders/1jqxwetJ08wy24HAC0_X7-Lxx6dWCZCR-?usp=share_link">[link:Google
+                            Driver]</a></font>
+                    </h2>
+                    <div class="content project_headline">
+                        <div class="text">
+                            <p>
+                                <font size=3>Table 4: Statistics of the datasets used in our experiments.</font>
+                            </p>
+                        </div>
+                        <div class="img" style="text-align:center">
+                            <img class="img_responsive" src="asset/datasets.png" alt="result"
+                                style="margin:auto;max-width:90%">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="content">
+                <div class="text">
+                    <h1>5. Usage</h1>
+                    <p>
+                        <font size=4>5.1. Download the code</font>
+                    <p>Install the required packages according to requirements.txt.</p>
+                    <div class="img" style="text-align:center">
+                        <img class="img_responsive" src="asset/require.png" alt="result" style="margin:auto;max-width:90%">
+                    </div>
+                    </p>
+                    <p>
+                        <font size=4>5.2. Prepare the datasets.</font>
+                    <p>(1) Directly download the processed datasets used in this paper:</p>
+                    <a
+                        href="https://drive.google.com/drive/folders/1arpebtUF5sg5T5sJY3S-XIjF_AdOW5u8?usp=share_link">ML-1M</a>
+                        <a
+                        href="https://drive.google.com/drive/folders/1_jVor_2i32by-VSTtw49OFvw6T-n33e1?usp=share_link">Amazon</a>
+                        <a
+                        href="https://drive.google.com/drive/folders/1LFCMEb88E7wH6A_-ksygwyEqG_H4qX4q?usp=share_link">Food</a>
+                    
+                        <p>(2) Use your own datasets:</br>Ensure that your data is organized according to the format:
+                        user_id:token, item_id:token, timestamp:float, bin_id:floadt.</p>
+
+                    </p>
+                    <p>(3) Rename the data files by dataset-name.train/valid/test.inter, and put them into the folder ./dataset/dataset-name/
+                        (note: replace "dataset-name" with your own dataset name).</p>
+
+                    </p>
+                    <font size=3>
+                        <p>
+                            <font size=4>5.3. Run our framework</font>
+                        </p>
+                        <p>(1)Run main.py to train and save the models for propensity score, where the training parameters can be indicated through the
+                            config file.
+
+                            For example:</p>
+                        <div class="img" style="text-align:center">
+                            <img class="img_responsive" src="asset/prop.png" alt="result"
+                                style="margin:auto;max-width:90%">
+                        </div>
+                        <p>(2)Run main.py to train the debiased recommender model our model, where the training parameters can be indicated through the
+                            config file.
+
+                            For example:</p>
+                        <div class="img" style="text-align:center">
+                            <img class="img_responsive" src="asset/run.png" alt="result"
+                                style="margin:auto;max-width:90%">
+                        </div>
+
+                    </font>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="text">
+                    <h1>6. Detailed parameter search ranges</h1>
+
+                    <div class="img" style="text-align:center">
+                        <img class="img_responsive" src="asset/range.png" alt="range"
+                            style="margin:auto;max-width:90%;height: 50%;width: 50%;">
+                    </div>
+                    <p>where learning_rate corresponds to the recommendation model, imputation learning rate represents the learning rate of the imputation model and UM learning rate is the learning rate of the model for updating the uncertanty sets.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="content">
+                <div class="text">
+                    <h1>7. Runtime Environment</h1>
+                    <ul class="download">
+                        <font size=3>
+                            <li>
+                                <p>System:Linux dell-PowerEdge-R730</p>
+                            </li>
+                            <li>
+                                <p>CPU: Intel(R) Xeon(R) CPU E5-2630 v4 @ 2.20GHz</p>
+                            </li>
+                            <li>
+                                <p>CPU-Memory:16G</p>
+                            </li>
+                            <li>
+                                <p>GPU:NVIDIA Corporation GV100 [TITAN V] (rev a1)</p>
+                            </li>
+                            <li>
+                                <p>GPU-Memory:45G</p>
+                            </li>
+                            <li>
+                                <p>Pytorch: 1.7.0</p>
+                            </li>
+                            <li>
+                                <p>CUDA:11.6</p>
+                            </li>
+                        </font>
+                    </ul>
+
+                </div>
+            </div>
+
+            <div id="download_plus_animation"></div>
+</body>
+
+</html>
