@@ -1,13 +1,7 @@
 # Causally Debiased Time-aware Recommendation
 A PyTorch implementation of Causally Debiased Time-aware Recommendation
 
-[project page](https://ifqre.github.io/IFQRE/)
-
-
-
-# Illustration
-
-An illustration of our recommendation paradigm CDTR, where the users can explicitly indicate their disclosing willingness, and the model needs to trade-off the recommendation quality and user willingness. CDTR first finds the best strategy that balances the recommendation quality and user willingness. Then the user interactions are disclosed according to the optimal strategy. At last, the recommender model is trained based on the disclosed interactions.
+[project page](https://sigir-cdtr.github.io/)
 
 
 
@@ -24,9 +18,9 @@ pip install -r requirements.txt
 
 (1) Directly download the processed datasets used in this paper:
 
-[ML-1M](https://drive.google.com/drive/folders/1arpebtUF5sg5T5sJY3S-XIjF_AdOW5u8?usp=share_link)
-[Amazon](https://drive.google.com/drive/folders/1_jVor_2i32by-VSTtw49OFvw6T-n33e1?usp=share_link)
-[Food](https://drive.google.com/drive/folders/1LFCMEb88E7wH6A_-ksygwyEqG_H4qX4q?usp=share_link)
+[ML-1M](https://drive.google.com/drive/folders/1dgcMEEfMMvBWUiig4Zw8IkFYAWcWCi8d?usp=share_link)
+[Amazon](https://drive.google.com/drive/folders/1pAmKR2e6-BrHjl6x9ilAlFkPThfLZxXv?usp=share_link)
+[Food](https://drive.google.com/drive/folders/1sWMO14kq_ia98nC2zed6BHPjNkwK8GET?usp=share_link)
 
 (2) Use your own datasets:
 
