@@ -1,7 +1,7 @@
 # Causally Debiased Time-aware Recommendation
 A PyTorch implementation of Causally Debiased Time-aware Recommendation
 
-[project page](https://sigir-cdtr.github.io/)
+[project page](https://www-cdtr.github.io/)
 
 
 
@@ -18,9 +18,9 @@ pip install -r requirements.txt
 
 (1) Directly download the processed datasets used in this paper:
 
-[ML-1M](https://drive.google.com/drive/folders/1dgcMEEfMMvBWUiig4Zw8IkFYAWcWCi8d?usp=share_link)
-[Amazon](https://drive.google.com/drive/folders/1pAmKR2e6-BrHjl6x9ilAlFkPThfLZxXv?usp=share_link)
-[Food](https://drive.google.com/drive/folders/1sWMO14kq_ia98nC2zed6BHPjNkwK8GET?usp=share_link)
+[ML-1M](https://github.com/WWW-CDTR/www-cdtr.github.io/tree/main/CDTR/datasets/ML-1M)
+[Amazon](https://github.com/WWW-CDTR/www-cdtr.github.io/tree/main/CDTR/datasets/Amazon)
+[Food](https://github.com/WWW-CDTR/www-cdtr.github.io/tree/main/CDTR/datasets/Food)
 
 (2) Use your own datasets:
 
