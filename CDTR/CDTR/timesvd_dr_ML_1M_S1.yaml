@@ -1,0 +1,71 @@
+
+# general
+gpu_id: 2
+use_gpu: True
+seed: 2023
+state: INFO
+reproducibility: True
+data_path: 'dataset/'
+checkpoint_dir: 'saved/'
+show_progress: False
+save_dataset: False
+dataset_save_path: ~
+save_dataloaders: False
+dataloaders_save_path: ~
+log_wandb: False
+wandb_project: 'CDTR'
+LABEL_FIELD : 'rating'
+RATING_FIELD : 'rating'
+TIME_FIELD: 'time_id'
+#WDAY_FIELD: 'time_id'
+# training settings
+epochs: 300
+train_batch_size: 1024
+learner: adam
+base_learning_rate: 0.001
+imp_learning_rate: 0.001
+neg_sampling: ~
+#  uniform: 10
+
+eval_step: 1
+stopping_step: 10
+clip_grad_norm: ~
+# clip_grad_norm:  {'max_norm': 5, 'norm_type': 2}
+weight_decay: 0.0
+loss_decimal_place: 4
+require_pow: False
+
+# evaluation settings
+eval_args: 
+  split: {'RS':[0.8,0.1,0.1]}
+  group_by: user
+  order: TO
+  mode: labeled
+repeatable: False
+metrics: ["MSE","RMSE","MAE","AUC","LogLoss"]
+topk: [10]
+load_col:  {'inter': ['user_id', 'item_id','rating','timestamp','time_id']}
+valid_metric: rmse
+valid_metric_bigger: True
+eval_batch_size: 1024
+metric_decimal_place: 4
+normalize_field: ['timestamp']
+normalize_all: ~
+K: 7
+T: 100
+M: 3
+sig: 0.5
+embedding_size: 16
+benchmark_filename: ['train','valid','test']
+
+sample_rate: 0.001
+ips_freq: 5
+imp_freq: 5
+base_freq: 1
+gamma_v: 1.1
+gamma_t: 1.1
+task: 'dr'
+robust: False
+psv_path: 'saved/ml1m_s1_item_ps.pth'
+pst_path: 'saved/ml1m_s1_time_ps.pth'
+

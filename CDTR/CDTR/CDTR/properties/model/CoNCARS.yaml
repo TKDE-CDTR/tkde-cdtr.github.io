@@ -1,0 +1,6 @@
+embedding_size: 64
+cnn_channels: [ 1, 16, 16, 16, 16 ]
+cnn_kernels: [ 4, 4, 2, 2 ]
+cnn_strides: [ 1, 2, 2, 1 ]
+dropout_prob: 0.2
+reg_weights: [ 0.1, 0.1 ]
